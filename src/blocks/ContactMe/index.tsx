@@ -41,7 +41,7 @@ const ContactMe: React.FC = () => {
       return setStatusMessage("Servidor de email não está respondendo! Reinicie o site.");
     }, (1000 * 60) * 5); // 5 minutes
 
-    api.post('sendMail', data).then(() => {
+    api.post('sendmail', data).then(() => {
       ring?.classList.remove('sending');
 
       setName('');
