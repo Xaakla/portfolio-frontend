@@ -1,0 +1,31 @@
+@media(max-width: 600px) {
+    .inicial {
+        #tec {
+            font-size: 25px !important;
+        }
+
+        .button {
+            font-size: 12pt;
+        }
+    }
+}
+
+@media(max-width: 1000px) {
+    #canvas, #js-img {
+        display: none !important;
+    }
+}
+
+@media(max-width: 1300px) {
+    .inicial {
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        padding: 0 !important;
+
+        .right {
+            margin-top: 64px;
+            flex: 0 !important;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@media(max-width: 1000px) {
+    .navbar {
+        .title {
+            svg {
+                width: 150px;
+            }
+        }
+        #desktop {
+            display: none !important;
+        }
+        .bar {
+            display: block !important;
+        }
+    }
+}

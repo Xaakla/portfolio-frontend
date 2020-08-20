@@ -1,0 +1,103 @@
+@import '../../colors.scss';
+@import './styles-responsive.scss';
+
+.inicial {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 64px;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    background-image: url('../../assets/cover.jpg');
+    background-size: cover;
+    // background: #161616;
+    color: $third-color;
+    font-family: 'Inconsolata', monospace;
+
+    .left {
+        text-align: left;
+    }
+    
+    .right {
+        flex: 1;
+        text-align: center;
+        
+        canvas {
+            border: 1px solid $secondary-color;
+            cursor: grab;
+        }
+
+        img {
+            width: 300px;
+            margin: 0 auto;
+            // box-shadow: 0 0 200px white;
+            user-select: none;
+        }
+    }
+
+    
+    #tec {
+        font-size: 56px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-align: left;
+
+        span {
+            color: $secondary-color;
+            position: relative;
+
+            span::after {
+                content: '';
+                width: 3px;
+                height: 100%;
+                background: $third-color;
+                position: absolute;
+                top: 0;
+                right: 0;
+                animation: pisca-pisca .9s infinite;
+                animation-delay: .3s;
+            }
+        }
+    }
+    
+    .button::before, .button::after {
+        background: #000;
+    }
+
+    .inicial-button {
+        width: 120px;
+    }
+}
+
+@keyframes pisca-pisca {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes appear{
+    from {
+        opacity: 0;
+        box-shadow: 0 0 0 #fff;
+        transform: scale(.2);
+    }
+    to {
+        box-shadow: 0 0 200px #fff;
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes delay{
+    from {
+        box-shadow: 0 0 0 #fff;
+    }
+    to {
+        box-shadow: 0 0 200px #fff;
+    }
+}

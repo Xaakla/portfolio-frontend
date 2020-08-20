@@ -1,0 +1,210 @@
+@import '../../colors.scss';
+@import './styles-responsive.scss';
+@import './mobile.scss';
+
+.navbar {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    justify-content: space-between;
+    padding: 16px 24px;
+    background: transparent;
+    transition: .6s;
+    
+    .title {
+        user-select: none;
+        text-decoration: none;
+        position: relative;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        transition: .6s;
+
+        @for $var from 2 to 12 {
+            #logo path:nth-child(#{$var}) {
+                fill: white;
+            }   
+        }
+    }
+    
+    .title:hover {
+        #logo path:nth-child(2) {
+            stroke-dasharray: 160;
+            stroke-dashoffset: 160;
+            fill: none;
+            animation: line-animation 1.5s ease-in forwards;
+        }
+        #logo path:nth-child(3) {
+            stroke-dasharray: 67;
+            stroke-dashoffset: 67;
+            fill: none;
+            animation: line-animation 1.5s ease-in forwards;
+        }
+        #logo path:nth-child(4) {
+            stroke-dasharray: 144;
+            stroke-dashoffset: 144;
+            fill: none;
+            animation: line-animation 1.5s ease-in forwards;
+        }
+        #logo path:nth-child(5) {
+            stroke-dasharray: 194;
+            stroke-dashoffset: 194;
+            fill: none;
+            animation: line-animation 1.5s ease-in forwards;
+        }
+        #logo path:nth-child(6) {
+            stroke-dasharray: 122;
+            stroke-dashoffset: 122;
+            fill: none;
+            animation: line-animation 1.5s ease-in forwards;
+        }
+        #logo path:nth-child(7) {
+            stroke-dasharray: 154;
+            stroke-dashoffset: 154;
+            fill: none;
+            animation: line-animation 1.5s ease-in forwards;
+        }
+        #logo path:nth-child(8) {
+            stroke-dasharray: 122;
+            stroke-dashoffset: 122;
+            fill: none;
+            animation: line-animation 1.5s ease-in forwards;
+        }
+        #logo path:nth-child(9) {
+            stroke-dasharray: 134;
+            stroke-dashoffset: 134;
+            fill: none;
+            animation: line-animation 1.5s ease-in forwards;
+        }
+        #logo path:nth-child(10) {
+            stroke-dasharray: 142;
+            stroke-dashoffset: 142;
+            fill: none;
+            animation: line-animation 1.5s ease-in forwards;
+        }
+        #logo path:nth-child(11) {
+            stroke-dasharray: 160;
+            stroke-dashoffset: 160;
+            fill: none;
+            animation: line-animation 1.5s ease-in forwards;
+        }
+        
+    }
+
+    .mobile-container {
+        display: none;
+    }
+    .mobile-show {
+        display: flex;
+    }
+
+    .bar {
+        display: none;
+    }
+
+    #desktop {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        padding: 2px 4px;
+
+        
+        
+        a {
+            color: #fff;
+            text-decoration: none;
+            letter-spacing: 2px;
+
+            li {
+                position: relative;
+                font-size: 18px;
+                list-style: none;
+                padding: 8px 16px;
+                border-radius: 16px;
+                margin-left: 8px;
+                background: transparent;
+                user-select: none;
+                cursor: pointer;
+                transition: .6s;
+            }
+        }
+        
+
+        li::after {
+            content: '';
+            width: 0%;
+            height: 4px;
+            background: #fff;
+            position: absolute;
+            bottom: 0%;
+            left: 50%;
+            border-radius: 16px;
+            transition: all .5s ease;
+        }
+        
+        li:hover::after {
+            left: 0%;
+            width: 100%;
+        }
+    }
+    
+}
+
+@keyframes jump {
+    0% {
+        font-size: 28px;
+    }
+    60% {
+        font-size: 32px;
+    }
+    100% {
+        font-size: 28px;
+    }
+}
+@keyframes jump-hover {
+    0% {
+        font-size: 22px;
+    }
+    60% {
+        font-size: 26px;
+    }
+    100% {
+        font-size: 22px;
+    }
+}
+@keyframes line-animation {
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+.sticky {
+    position: fixed;
+    padding: 2px 16px;
+    background: #030303;
+
+    .title {
+        font-size: 22px;
+    }
+    .title:hover {
+        animation-name: jump-hover;
+        animation-duration: .4s;
+        animation-delay: .2;
+    }
+    
+    ul {
+        
+        li {
+            font-size: 17px;
+            padding: 8px 14px;
+        }
+    }
+}
+

@@ -1,0 +1,61 @@
+@import '../../colors.scss';
+
+@media(max-width: 1000px) {
+    .modal-container {
+        
+        .modal {
+            width: 100% !important;
+            height: 100% !important;
+            padding: 8px 48px;
+            border-radius: 2rem;
+            transform: scale(0);
+            transition: all .5s;
+    
+            header {
+                h3 {
+                    font-size: 15pt !important;
+                }
+            }
+            
+            main {
+                height: 85% !important;
+            
+                label {
+                    height: 250px !important;
+                    width: 250px !important;
+                    
+                    img {
+                        width: 80%;
+                        height: 80%;
+                        object-fit: cover;
+                        border-radius: 16px;
+                    }
+                }
+            
+                p {
+                    padding: 8px !important;
+                    letter-spacing: 1px;
+                    font-size: 9pt !important;
+                    text-align: justify;
+                    line-height: 35px;
+                }
+            
+                // Card
+                .card-container {
+            
+                    main {
+                        .card-title {
+                            font-size: 15pt !important;
+                        }
+                        
+                        .card-description {
+                            width: 250px !important;
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+    
+}

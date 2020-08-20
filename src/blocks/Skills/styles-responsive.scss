@@ -1,0 +1,25 @@
+@media(max-width: 1000px) {
+    .skills {
+        .block-name {
+            font-size: 35pt;
+            text-align: center !important;
+        }
+
+        .skills-container {
+            padding: 0 !important;
+            row-gap: 0;
+            width: 100%;
+
+            .skills-data {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+                padding: 0rem 0rem;
+                margin-bottom: 2rem;
+                width: 100%;
+            }
+        }
+    }
+}

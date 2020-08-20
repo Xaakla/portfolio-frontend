@@ -1,0 +1,87 @@
+@import './styles-responsive.scss';
+@import '../../colors.scss';
+
+.footer {
+    height: 100vh;
+    box-sizing: border-box;
+    background: #ddff1f;
+    // background: #252627;
+    padding: 8px 64px;
+    
+    .block-name {
+        text-align: right;
+        color: #252627 !important;
+        opacity: .9 !important;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0 0 64px 16px;
+            
+        .profile-image {
+            display: flex;
+            flex-direction: row;
+            transition: 600ms;
+            width: 410px;
+            background: $primary-color;
+            
+            .visual {
+                display: flex;
+                flex-direction: column;
+
+                img {
+                    border: 2px solid $primary-color;
+                    width: 400px;
+                    user-select: none;
+                }
+    
+                span {
+                    width: 100%;
+                    background: $primary-color;
+                    color: $third-color;
+                    font-weight: bold;
+                    font-size: 2.0rem;
+                    user-select: none;
+                }
+            }
+
+            .bio {
+                display: none;
+                color: $third-color;
+                font-size: 1.2rem;
+                line-height: 2.2rem;
+                padding: 0 8px;
+                align-items: center;
+                justify-content: right;
+            }
+        }
+        .profile-image:hover {
+            width: 850px;
+            .bio {
+                transition-delay: 2s;
+                display: flex;
+            }
+        }
+
+        .profile-info {
+            padding: 0 64px;
+            text-align: left;
+            color: $primary-color;
+            font-size: 1.6rem;
+            
+            legend {
+
+                fieldset {
+                    border: none;
+
+                    span {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}

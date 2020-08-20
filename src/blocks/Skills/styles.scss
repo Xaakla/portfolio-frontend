@@ -1,0 +1,256 @@
+@import '../../colors.scss';
+@import './styles-responsive.scss';
+
+.skills {
+    min-height: 100vh;
+    box-sizing: border-box;
+    background: #252627;
+    padding: 8px 62px;
+    user-select: none;
+
+    .block-name {
+        text-align: right;
+    }
+
+    .skills-container {
+        padding: 0 8rem;
+        row-gap: 2rem;
+        text-align: center;
+
+        .skills-subtitle {
+            margin-bottom: 2rem;
+        }
+
+        .skills-text {
+            margin-bottom: 4rem;
+        }
+
+        .skills-data {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            padding: .5rem 1rem;
+            margin-bottom: 4rem;
+            border-top-left-radius: .5rem;
+            border-top-right-radius: .5rem;
+            box-shadow: 0 4px 25px rgba(35, 38, 39, 0.1);
+            transition: 400ms;
+
+            .skills-names {
+                display: flex;
+                align-items: center;
+
+                .skills-icon {
+                    font-size: 2rem;
+                    margin-right: 2rem;
+                }
+
+                .skills-icon-html {
+                    color: #{$html-color}
+                }
+
+                .skills-icon-css {
+                    color: #{$css-color}
+                }
+
+                .skills-icon-sass {
+                    color: #{$sass-color}
+                }
+
+                .skills-icon-javascript {
+                    color: #{$js-color}
+                }
+
+                .skills-icon-typescript {
+                    color: #{$ts-color}
+                }
+
+                .skills-icon-reactjs {
+                    color: #{$reactjs-color}
+                }
+                
+                .skills-icon-reactnative {
+                    color: #{$react-native-color};
+                }
+
+                .skills-icon-nodejs {
+                    color: #{$nodejs-color}
+                }
+
+                .skills-icon-mysql {
+                    color: #{$mysql-color};
+                }
+
+                .skills-icon-mongodb {
+                    color: #{$mongodb-color}
+                }
+                
+            }
+
+            .skills-bar {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                background-color: #ddff1f;
+                height: .25rem;
+                border-radius: .5rem;
+            }
+
+            [data-anime] {
+                width: 0;
+                transition: all 2s;
+            }
+            [data-anime="html"].animate {
+                width: 100% !important;
+            }
+            [data-anime="css"].animate {
+                width: 82% !important;
+            }
+            [data-anime="sass"].animate {
+                width: 43% !important;
+            }
+            [data-anime="js"].animate {
+                width: 87% !important;
+            }
+            [data-anime="ts"].animate {
+                width: 83% !important;
+            }
+            [data-anime="reactjs"].animate {
+                width: 89% !important;
+            }
+            [data-anime="reactnative"].animate {
+                width: 80% !important;
+            }
+            [data-anime="nodejs"].animate {
+                width: 78% !important;
+            }
+            [data-anime="mysql"].animate {
+                width: 65% !important;
+            }
+            [data-anime="mongodb"].animate {
+                width: 60% !important;
+            }
+
+            .skills-html {
+                background: #{$html-color};
+            }
+            .skills-css {
+                background: #{$css-color};
+            }
+            .skills-sass {
+                background: #{$sass-color}
+            }
+            .skills-javascript {
+                background: #{$js-color}
+            }
+            .skills-typescript {
+                background: #{$ts-color}
+            }
+            .skills-reactjs {
+                background: #{$reactjs-color}
+            }
+            .skills-reactnative {
+                background: #{$react-native-color};
+            }
+            .skills-nodejs {
+                background: #{$nodejs-color};
+            }
+            .skills-mysql {
+                background: #{$mysql-color};
+            }
+            .skills-mongodb {
+                background-color: #{$mongodb-color};
+                
+            }
+        }
+        
+    }
+}
+
+.skills-data:hover {
+    transform: scale(1.1);
+    background: #ddd;
+
+    .skills-names {
+        color: #{$black-color} !important;
+
+        .skills-icon-html {
+            color: #{$html-color}
+        }
+        
+        .skills-icon-css {
+            color: #{$css-color} !important;
+        }
+        
+        .skills-icon-sass {
+            color: #{$sass-color} !important;
+        }
+        
+        .skills-icon-javascript {
+            color: #{$js-color} !important;
+        }
+        
+        .skills-icon-typescript {
+            color: #{$ts-color} !important;
+        }
+        
+        .skills-icon-reactjs {
+            color: #{$reactjs-color} !important;
+        }
+        
+        .skills-icon-reactnative {
+            color: #{$react-native-color} !important;
+        }
+        
+        .skills-icon-nodejs {
+            color: #{$nodejs-color} !important;
+        }
+        
+        .skills-icon-mysql {
+            color: #{$mysql-color} !important;
+        }
+        
+        .skills-icon-mongodb {
+            color: #{$mongodb-color} !important;
+        }
+    }
+
+    .skills-percentage {
+        color: #{$black-color} !important;
+    }
+
+    .skills-html {
+        background: #{$html-color} !important;
+    }
+    .skills-css {
+        background: #{$css-color} !important;
+    }
+    .skills-sass {
+        background: #{$sass-color} !important;
+    }
+    .skills-javascript {
+        background: #{$js-color} !important;
+    }
+    .skills-typescript {
+        background: #{$ts-color} !important;
+    }
+    .skills-reactjs {
+        background: #{$reactjs-color} !important;
+    }
+    .skills-reactnative {
+        background: #{$react-native-color} !important;
+    }
+    .skills-nodejs {
+        background: #{$nodejs-color} !important;
+    }
+    .skills-mysql {
+        background: #{$mysql-color} !important;
+    }
+    .skills-mongodb {
+        background-color: #{$mongodb-color} !important;
+        
+    }
+}
+

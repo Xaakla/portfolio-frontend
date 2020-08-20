@@ -1,0 +1,45 @@
+@import '../../colors.scss';
+
+@media(max-width: 600px) {
+    .footer {
+        .block-name {
+            font-size: 35pt;
+            text-align: center !important;
+        }
+    }
+}
+@media(max-width: 1000px) {
+    // .footer {
+        .content {
+            flex-direction: column !important;
+            padding: 0 !important;
+
+            .profile-image {
+                display: flex;
+                flex-direction: column;
+                transition: 800ms;
+                width: 410px;
+                background: $primary-color;
+                padding-bottom: 16px;
+    
+                img {
+                    border: 2px solid $primary-color;
+                    width: 200px;
+                }
+    
+                
+    
+                span {
+                    width: 100%;
+                    background: $primary-color;
+                    color: $third-color;
+                    font-weight: bold;
+                    font-size: 2.0rem;
+                }
+            }
+            .profile-image:hover {
+                width: 450px;
+            }
+        }
+    // }
+}

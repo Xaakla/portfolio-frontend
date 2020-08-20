@@ -1,0 +1,52 @@
+@import '../../colors.scss';
+
+.mobile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background: $primary-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    #mobile {
+        position: relative;
+        
+        a {
+            color: $secondary-color;
+            text-decoration: none;
+            letter-spacing: 2px;
+    
+            li {
+                font-size: 3em;
+                list-style: none;
+                padding: 8px 16px;
+                border-radius: 16px;
+                user-select: none;
+                cursor: pointer;
+                transition: .6s;
+            }
+        }
+
+        a:hover {
+            color: $third-color;
+        }
+
+        a::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 40%;
+            display: flex;
+            justify-content: center;
+        }
+
+    }   
+
+    #mobile:hover {
+        color: #0002;
+    }
+}

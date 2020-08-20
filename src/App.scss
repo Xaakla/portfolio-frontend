@@ -1,0 +1,68 @@
+:root {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  background: #252627;
+  color: #e8e8e8;
+  position: relative;
+}
+
+.block-name {
+  color: #ddff1f;
+  font-size: 10rem;
+  z-index: 0;
+  opacity: .1;
+  user-select: none;
+}
+
+.button {
+  position: relative;
+  color: #fff;
+  font-size: 17px;
+  font-family: 'MuseoModerno', cursive;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 8px 24px;
+  cursor: pointer;
+  background: none;
+  outline: none;
+  text-decoration: none;
+  user-select: none;
+  transition: 800ms;
+  border: 3px solid #ddff1f;
+}
+
+.button::before, .button::after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 3px;
+  background: red;
+  transform: skewX(50deg);
+  transition: 400ms linear;
+}
+
+.button::before {
+  top: -3px;
+  left: 10%;
+}
+
+.button::after {
+  bottom: -3px;
+  right: 10%;
+}
+
+.button:hover::before {
+  left: 80%;
+}
+
+.button:hover::after {
+  right: 80%;
+}
+
+.active {
+  color: #ddff1f !important;
+}

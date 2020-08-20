@@ -1,0 +1,46 @@
+@media (max-width: 1000px) {
+    .contactme {
+        .block-name {
+            font-size: 30pt;
+            text-align: center !important;
+        }
+
+        .form {
+            .form-row {
+                flex-direction: column !important;
+                width: 100% !important;
+
+                .input-name, .input-email {
+                    margin: 16px !important;
+                }
+            }
+
+            .input-message {
+                margin-top: 16px !important;
+                width: 100% !important;
+            }
+
+            .input-submit {
+                justify-content: center !important;
+                width: 100% !important;
+                flex-direction: column !important;
+                margin: 0 !important;
+
+                
+            }
+        }
+    }
+
+    
+}
+
+@media(max-width: 1600px) {
+    #status-message {
+        width: 80%;
+    }
+}
+@media(max-width: 750px) {
+    #status-message {
+        width: 60%;
+    }
+}
