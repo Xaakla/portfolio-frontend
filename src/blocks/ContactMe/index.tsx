@@ -41,8 +41,18 @@ const ContactMe: React.FC = () => {
       return setStatusMessage("Servidor de email não está respondendo! Reinicie o site.");
     }, (1000 * 60) * 5); // 5 minutes
 
-    api.post('sendmail', data).then(() => {
+    api.post('sendmail', data).then(response => {
       ring?.classList.remove('sending');
+      
+      const { ok } = response.data;
+
+      if (!ok) {
+        status?.classList.remove('status-success');
+        status?.classList.remove('status-warning');
+        status?.classList.add('status-error');
+        console.log(response.data)
+        return setStatusMessage("Ocorreu um erro ao enviar o email! Tente contato pelo Whatsapp.");
+      }
 
       setName('');
       setEmail('');
