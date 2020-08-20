@@ -1,6 +1,8 @@
 import React from 'react';
 import './styles.scss';
 
+import { FaChevronUp, FaChevronDown } from 'react-icons/fa';
+
 import profileImg from '../../assets/profile.png';
 
 const Footer: React.FC = () => {
@@ -10,15 +12,20 @@ const Footer: React.FC = () => {
 
         <div className="content">
           <div className="profile-image">
-            <div className="visual">
+            <div className="image-box">
               <img src={profileImg} alt="profile"/>
-              <span>Diego Rocha</span>
             </div>
-            <span className="bio">
-             Sou programador FullStack, trabalho com NodeJS no backend e com ReactJS e React Native no frontend usando JavaScript e TypeScript. <br/><br/>
-             Começei a estudar JavaScript em Junho de 2019, já desenvolvi projetos como freelancer usando a linguagem e até projetos pessoias. <br/><br/>
-             Pretendo chegar mais longe e aprimorar meus conhecimentos ganhando mais experiência de trabalho.
-            </span>
+            <div className="bio-info">
+              <span className="bio-name">
+                Diego Rocha 
+                <FaChevronUp className="bio-icon" />
+              </span>
+              <span className="bio">
+                Sou programador FullStack, trabalho com NodeJS no backend e com ReactJS e React Native no frontend usando JavaScript e TypeScript. <br/><br/>
+                Começei a estudar JavaScript em Junho de 2019, já desenvolvi projetos como freelancer usando a linguagem e até projetos pessoias. <br/><br/>
+                Pretendo chegar mais longe e aprimorar meus conhecimentos ganhando mais experiência de trabalho.
+              </span>
+            </div>
           </div>
 
           <div className="profile-info">
@@ -46,9 +53,7 @@ const Footer: React.FC = () => {
               <fieldset>
                 <span>Framework: </span>
                 ReactJS / React Native
-              </fieldset>
-
-              
+              </fieldset>              
             </legend>
           </div>
         </div>
