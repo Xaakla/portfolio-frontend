@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.scss';
 
-import { FaChevronUp, FaChevronDown } from 'react-icons/fa';
+import { FaChevronUp } from 'react-icons/fa';
 
 import profileImg from '../../assets/profile.png';
 

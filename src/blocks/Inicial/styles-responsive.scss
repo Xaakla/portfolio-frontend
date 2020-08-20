@@ -1,21 +1,3 @@
-@media(max-width: 600px) {
-    .inicial {
-        #tec {
-            font-size: 25px !important;
-        }
-
-        .button {
-            font-size: 12pt;
-        }
-    }
-}
-
-@media(max-width: 1000px) {
-    #canvas, #js-img {
-        display: none !important;
-    }
-}
-
 @media(max-width: 1300px) {
     .inicial {
         flex-direction: column !important;
@@ -29,3 +11,23 @@
         }
     }
 }
+
+@media(max-width: 1000px) {
+    #canvas, #js-img {
+        display: none !important;
+    }
+}
+
+@media(max-width: 600px) {
+    .inicial {
+        #tec {
+            font-size: 25px !important;
+        }
+
+        .button {
+            font-size: 12pt;
+        }
+    }
+}
+
+

@@ -1,3 +1,9 @@
+@media(max-width: 1600px) {
+    #status-message {
+        width: 80%;
+    }
+}
+
 @media (max-width: 1000px) {
     .contactme {
         display: flex;
@@ -54,11 +60,6 @@
     
 }
 
-@media(max-width: 1600px) {
-    #status-message {
-        width: 80%;
-    }
-}
 @media(max-width: 750px) {
     #status-message {
         width: 60%;
