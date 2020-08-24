@@ -87,7 +87,7 @@ const Projects: React.FC = () => {
             <label className="img">
             {
               projects.map((project, index) => {
-                if (index === 0) return <img key={project.image} src={project.image} alt="project-image haha"/>
+                if (index === 0) return <a href={project.image} target="_blank" rel="noopener noreferrer"><img key={project.image} src={project.image} alt="project-image"/></a>
                 return false
               })
             }
@@ -138,7 +138,9 @@ const Projects: React.FC = () => {
 
                 <main>
                   <label className="project-img">
-                    <img src={project.image} alt="project-image"/>
+                    <a href={project.image} target="_blank" rel="noopener noreferrer">
+                      <img src={project.image} alt="project-image"/>
+                    </a>
                   </label>
 
                   <p>
@@ -163,7 +165,9 @@ const Projects: React.FC = () => {
               <div className="card-container card-scale" key={project._id}>
                 <aside>
                   <label className="img">
-                    <img src={project.image} alt="project-image"/>
+                    <a href={project.image} target="_blank" rel="noopener noreferrer">
+                      <img src={project.image} alt="project-image"/>
+                    </a>
                   </label>
                 </aside>
 
