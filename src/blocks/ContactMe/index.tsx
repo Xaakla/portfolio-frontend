@@ -137,7 +137,7 @@ const ContactMe: React.FC = () => {
         </form>
         <button className="whatsapp-container">
           <a 
-            href={`https://wa.me/5562992604763?text=${text}`} 
+            href={`https://wa.me/5562992045332?text=${text}`} 
             target="_blank" 
             rel="noopener noreferrer"
             className="whatsapp-link"
